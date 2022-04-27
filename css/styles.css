@@ -739,7 +739,7 @@ fill: var(--accent-color);
 
 .submenu {
     display: none;
-    position: relative;
+    position: absolute;
     width: 100%;
     bottom: 100%;
     min-width: 370px;
