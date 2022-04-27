@@ -721,13 +721,6 @@ fill: var(--accent-color);
     color: var(--title-text-color);
 }
 
-.container .projects-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.89;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
 
 
 .projects-list  {
@@ -738,7 +731,36 @@ fill: var(--accent-color);
 }
 
 .projects-items {
+    position: relative;
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-bottom: 30px;
+}
+
+.submenu {
+    display: none;
+    position: relative;
+    width: 100%;
+    bottom: 100%;
+    min-width: 370px;
+    min-height: 294px;
+    background-color:rgba(33, 150, 243, 0.9);
+}
+
+.submenu-text {
+    position: absolute;
+    margin-top: 63px;
+    margin-right: 24px;
+    margin-bottom: 63px;
+    margin-left: 24px;
+    width: 322px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--primary-bg-color);
+}
+
+.projects-items:hover .submenu {
+    display: block;
 }
