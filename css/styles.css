@@ -223,6 +223,11 @@ fill: var(--accent-color);
     height: 100%;
 }
 
+.backdrop .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+}
 .modal {
     position: absolute;
     top: 50%;
@@ -236,6 +241,14 @@ fill: var(--accent-color);
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 } 
+
+
+.modal-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+}
 
 
 
